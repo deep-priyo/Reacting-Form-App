@@ -7,10 +7,13 @@ const App = () => {
   const handleFormSubmitData = (data) => {
     setUsers([...users, data])
   }
+  const handleRemoveData = (id) => {
+    setUsers(() => users.filter((item, index) => id != index))
+  }
   return (
     <div className="w-full h-screen bg-zinc-200 flex items-center justify-center">
       <div className="container mx-auto">
-        <Cards users={users} />
+        <Cards handleRemove={handleRemoveData} users={users} />
         <Form handleFormSubmitData={handleFormSubmitData} />
       </div>
     </div>);
