@@ -3,7 +3,10 @@ import Card from "./Card";
 
 const Cards = ({ users }) => {
     return <div className="w-full  max-h-96  overflow-auto p-4 flex justify-center gap-4 flex-wrap">
-        <Card users={users} />
+        {users.map((item, index) => {
+            return <Card users={item} key={index} />
+        })}
+
 
     </div>;
 };
