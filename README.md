@@ -10,7 +10,7 @@ Welcome to the **React User Management App**! This app allows you to seamlessly 
 
 ## 🖼️ Screenshot
 
-![App Screenshot](./screenshot.png)
+![App Screenshot](./Screenshot.png)
 
 
 
